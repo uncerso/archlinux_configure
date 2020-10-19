@@ -1,0 +1,23 @@
+[core]
+	autocrlf = input
+	safecrlf = false
+	editor = nano
+[user]
+	name = ???
+	email = ???
+	signingkey = ???
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+[push]
+	default = current
+[commit]
+	gpgsign = true
+[pull]
+	ff = only
