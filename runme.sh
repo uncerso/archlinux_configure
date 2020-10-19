@@ -9,7 +9,7 @@ ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc
 
 sudo pacman -Syu
-sudo pacman -S --needed bash-completion zsh-completions acpi acpi_call acpid ntfs-3g intel-ucode amd-ucode gdb git htop net-tools upower lshw g++ wget curl firefox kitty sshfs xf86-video-intel xf86-video-nouveau bc
+sudo pacman -S --needed bash-completion acpi acpi_call acpid ntfs-3g intel-ucode amd-ucode gdb git htop net-tools upower lshw g++ wget curl firefox kitty sshfs xf86-video-intel xf86-video-nouveau bc
 
 #sudo pacman -S --needed transmission-gtk vlc clang shellcheck code
 
@@ -36,7 +36,7 @@ cd "$cur_pwd"
 
 set -e
 
-yay -S awesome-git rofi picom-git inter-font
+yay -S awesome-git rofi picom-git inter-font zsh-completions
 yay -S nemo alsa-utils pulseaudio pulseaudio-alsa mpd mpc maim feh xclip xprop imagemagick blueman redshift xfce4-power-manager upower noto-fonts-emoji FantasqueSansMono Nerd Font nerd-fonts-fantasque-sans-mono xdg-user-dirs ffmpeg iproute2 iw
 
 cd "$HOME"
